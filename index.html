@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marcello.Coma</title>
+    <meta charset="UTF-8"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="marcello.coma">
+    <meta property="og:site_name" content="marcello.coma">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Playfair+Display&family=Playpen+Sans&family=Roboto+Mono&family=Roboto:wght@500&family=Satisfy&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Da4Nv0sg88t4aMQUs");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+<header>
+    <nav>
+        <div class="logo"><img src="img/logo.png" alt="logo Marcello's Portfolio"></div>
+
+        <ul class="menu">
+            <li class="dropdown"><img src="img/menu-btn.png" alt="menu button">
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a target="_blank" href="curriculum.html">Curriculum Vitae</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!--HERO-->
+    <section class="hero">
+        <h1>Hi, I'm Marcello!</h1>
+
+        <h2 id="presentation">Front End Web Developer</h2>
+
+        <button><a target="_blank" href="curriculum.html">Curriculum Vitae</a></button>
+
+        <div class="hero-img">
+            <img src="img/hero_img.png" alt="hero img">
+        </div>
+    </section>
+
+    <!--PROJECTS-->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <p>Here you can see and visit all my projects with only one click.
+            <br>
+            Select one project and you you will be redirect to a GitHub Page.
+        </p>
+
+        <div class="proj-container">
+            <div class="proj">
+                <a href="#"><img src="img/project1.png" alt="project 1">
+                <figcaption>Hotel Pomelia Responsive Web Site</figcaption></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--ABOUT-->
+    <section id="about">
+        <h2>About</h2>
+    </section>
+
+    <!--CONTACTS-->
+    <section id="contacts">
+        <h2>Contact <span>me</span>.</h2>
+
+        <div class="contacts-form">
+            <input class="input" type="text" id="name" placeholder="Your name" required></input>
+
+            <input class="input" type="email" id="email" placeholder="Your e-mail" required></input>
+
+            <input class="input" type="text" id="text" placeholder="Topic" required></input>
+
+            <textarea class="input" id="message" placeholder="Write here..." required></textarea>
+
+            <button class="button" onclick="sendMail()">Submit now</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Copyright © 2023 Marcello Comandulli. All rights reserved.</p>
+
+    <div class="footerSocials">
+        <a href="https://www.facebook.com/marcello.coma/" target="_blank"><img src="img/facebook.png" alt="Facebook Link"></a>
+        <a href="https://instagram.com/unadirezione_giusta?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><img src="img/instagram.png" alt="Instagram Link"></a>
+        <a href="https://github.com/marcellocomandulli" target="_blank"><img src="img/github.png" alt="GitHub Link"></a>
+        <a href="https://www.linkedin.com/in/marcello-comandulli-a18271291/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Link"></a>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
