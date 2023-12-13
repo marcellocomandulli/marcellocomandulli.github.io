@@ -1,4 +1,4 @@
-   /*HERO CAROUSEL */
+   /*HERO PRESENTATION */
 const words = ["Tech Enthusiast", "Drone Pilot", "Traveler", "Front End Web Developer"];
 var counter = 0;
 var word = document.getElementById("presentation");
