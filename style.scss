@@ -147,6 +147,7 @@ nav {
 }
 
 .logo {
+   
    img {
       width: 70px;
       height: 70px;
@@ -230,7 +231,7 @@ nav {
       //HERO
 .hero {
    width: 100%;
-   height: 100vh;
+   
    overflow: hidden;
    margin-top: 100px;
 
@@ -251,7 +252,8 @@ nav {
    object-fit: cover;
    object-position: center;
    position: relative;
-   bottom: 50px;
+   left: 50px;
+   bottom: 70px;
    z-index: -1;
 }
 
@@ -267,6 +269,7 @@ nav {
 
       .hero {
          margin-top: 0px;
+         margin-bottom: -200px;
       }
 
       .hero h1 {
@@ -275,9 +278,10 @@ nav {
 
       .hero-img {
          width: 100%;
-         height: 700px;
+         height: 500px;
+         position: relative;
          left: 500px;
-         bottom: 250px;
+         top: -250px;
       }
 
       #presentation {
@@ -294,7 +298,7 @@ main {
       //PROJECTS
 
 #projects {
-   margin: 10% 0;
+   margin-bottom: 15%;
 }
 
 .proj {
@@ -304,8 +308,6 @@ main {
 
    img {
       width: 100%;
-      border-top-right-radius: 5px;
-      border-top-left-radius: 5px;
    }
 
    figcaption {
@@ -313,19 +315,19 @@ main {
       color: $secondColor;
       margin-top: -5px;
       padding: 7px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
    }
 }
 
 .proj-container {
    display: flex;
 
-   .proj-buttons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 5% 0;
+   .proj{
+      .proj-buttons {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         margin-top: 10px;
+      }
    }
 }
 
@@ -341,7 +343,7 @@ main {
       }
 
       #projects {
-         height: 100vh;
+         margin-bottom: 5%;
       }
 
       .proj-container {
@@ -356,13 +358,13 @@ main {
 
       //ABOUT
 #about {
-   width: 90%;
-   margin: 5% 0;
+   width: 100%;
+   
 }
 
    @media only screen and (min-width:850px) {
       #about {
-         margin-top: 30px;
+         
 
          h2 {
             text-align: left;
@@ -433,9 +435,10 @@ footer {
 @media only screen and (min-width:850px) {
    footer {
       width: 20%;
-      height: 20%;
+      height: 30%;
       position: fixed;
       bottom: 0;
+      padding-top: 80px;
 
       p {
          font-size: 8px;
@@ -469,6 +472,10 @@ footer {
    }
 }
 
+.profileimg {
+   text-align: center;
+}
+
 .experience {
    strong {
       font-weight: bold;
@@ -493,6 +500,12 @@ footer {
          .space {
             width: 50%;
             padding: 20px 0;
+         }
+
+         .profileimg {
+            text-align: left;
+            margin-left: 5%;
+            width: fit-content;
          }
       }
 
